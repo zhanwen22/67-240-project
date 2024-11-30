@@ -10,8 +10,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 header {
@@ -19,28 +17,40 @@ header {
     color: white;
     width: 100%;
     padding: 1%;
+    position: relative;
 }
 
 .header-content{
-    display: block;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
-.header-logo img {
-    height: 20%;
-    width: 20%;
+.header-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 18%;
+}
+
+.header-logo img{
+    height: 100%;
+    width: 100%;
     padding: 1%;
 }
 
 .header-text {
     text-align: center;
-    color: white;
+    flex-grow: 1; /* Allow header text to take up remaining space */
+    margin: 0; /* Remove margin */
 }
 
+.navbar{
+    background-color: #a1562d;
+}
 /* Styling for the navbar button (toggler) */
 .navbar-toggler {
     background-color: transparent; /* Makes the button blend in */
     border: none;  /* Removes border */
-    padding: 0; /* Removes padding */
 }
 
 /* Remove the default background and icon color for the navbar toggler */
@@ -48,45 +58,104 @@ header {
     background-image: none; /* Removes the default icon */
 }
 
-/* Optional: You can set a custom icon for the button */
-.navbar-toggler-icon:before {
-    content: '\2630';  /* Unicode character for a hamburger icon */
-    font-size: 30px;
-    color: #a1562d;  /* Change to the color you prefer */
-}
 
-/* nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
+#navigation-tabs a{
+    color:black;
+    font-family: "Roboto Mono", monospace;
+    font-size: 150%;    
+    padding-left: 4%;
+    padding-right: 4%;
     text-decoration: none;
+    text-align: center;
+} 
+
+#navigation-tabs {
+    padding-bottom: 1.20em;
+    clear:both;
+    display: list-item;
+    margin:auto;
+    text-align: center;
 }
 
-nav ul li a.active {
-    font-weight: bold;
-} */
-
-main {
-    padding: 20px;
+#navigation-tabs a:hover{
+    color:#AAB396; 
 }
 
-section {
+#navigation-tabs a.selected{
+    color:#674636; 
+    text-decoration: underline;
+}
+
+#About-Me-Main{
+    text-align: center;
+    padding: 1%;
+}
+
+.btn{
+    margin: 1%;
+    padding: 1%;
+}
+
+#battle-of-homestead-logo-image{
+    align-items: center;
+    width: 95%;
+}
+
+#battle-of-homestead-logo-image img{
+    width: 90%; 
+    align-items: center;
+}
+
+#mobile-tours{
+    text-align: center;
+}
+
+.section-header{
+    text-align: center;
+    padding: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 0;
+    margin-right: 0;
+    color: navy;
+    background-color: aqua;
+}
+/* section {
     text-align: center; /* Center all text in the section */
+
+#headerCarousel{
+    margin: 1%;
+    height: 30%;
+    align-items: center;
+    text-align: center;
 }
 
-.carousel-caption {
-    top: 25%;
+.headerCarouselItem{
+    top: 35%;
     text-align: center;
     color: white;
+}
+
+.carouselinner{
+    align-items: center;
+}
+
+#did-you-know{
+    background-color: blue;
+    text-align: center;
+    color: white;
+    padding: 1%;
+    height: 30%;
+}
+
+.did-you-know-text{
+    text-align: center;
+    padding: 1%;
+}
+
+#survey{
+    align-items: center;
+    text-align: center;
 }
 
 /* Responsive Adjustment for Mobile */
@@ -128,6 +197,6 @@ footer {
     background-color: #a1562d;
     color: white;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 2%;
+    margin-top: 1%;
 }
