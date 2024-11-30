@@ -1,0 +1,192 @@
+
+/* General Styles */
+.parkinsans-name {
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #a1562d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 20vh;
+}
+
+header .logo img {
+    max-height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+/* 通用样式 */
+.section-header {
+    text-align: center;
+    font-size: 2rem; /* 标题字体大小 */
+    color: white; /* 白色文字 */
+    background-color: #6fa3a6; /* 青色背景 */
+    padding: 10px 0;
+    margin: 20px 0; /* 上下间距 */
+    position: relative;
+}
+
+.section-header::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 5px;
+    background-color: #f4a261; /* 橙色条 */
+    margin: 5px auto 0 auto;
+    border-radius: 3px;
+}
+
+section {
+    text-align: center; /* Center all text in the section */
+}
+
+/* Carousel Container */
+.carousel {
+    position: relative;
+    max-width: 100%; /* Carousel width limited to 50% of the screen */
+    width: 100%; /* Ensures responsive behavior */
+    height: 60vh; /* Full-screen height */
+    margin: 0 auto; /* Center horizontally */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* Optional: Background color to fill gaps */
+    border: 1px solid #ccc; /* Optional: Border for visualization */
+}
+
+/* Slides Container */
+.carousel-slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Slide */
+.slide {
+    flex: 0 0 100%; /* Each slide takes 100% of the carousel width */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Text Overlay */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text-overlay h1 {
+    font-size: 2.5rem; /* Adjust font size for smaller width */
+    margin: 0;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-btn.left {
+    left: -40px; /* Adjust position outside the carousel width */
+}
+
+.carousel-btn.right {
+    right: -40px; /* Adjust position outside the carousel width */
+}
+
+/* Responsive Adjustment for Mobile */
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 90%; /* Expand carousel width to 90% for small screens */
+    }
+    .text-overlay h1 {
+        font-size: 1.8rem; /* Reduce text size */
+    }
+}
+
+.events, .support, .preview, .grant-street {
+    margin: 20px 0;
+}
+
+.events .event, .grant-street .story {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.events .event img, .grant-street .story img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.donate-btn {
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #a1562d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
