@@ -17,18 +17,45 @@ body {
 header {
     background-color: #a1562d;
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    height: 20vh;
+    width: 100%;
+    padding: 1%;
 }
 
-header .logo img {
-    max-height: 40px;
+.header-content{
+    display: block;
 }
 
-nav ul {
+.header-logo img {
+    height: 20%;
+    width: 20%;
+    padding: 1%;
+}
+
+.header-text {
+    text-align: center;
+    color: white;
+}
+
+/* Styling for the navbar button (toggler) */
+.navbar-toggler {
+    background-color: transparent; /* Makes the button blend in */
+    border: none;  /* Removes border */
+    padding: 0; /* Removes padding */
+}
+
+/* Remove the default background and icon color for the navbar toggler */
+.navbar-toggler-icon {
+    background-image: none; /* Removes the default icon */
+}
+
+/* Optional: You can set a custom icon for the button */
+.navbar-toggler-icon:before {
+    content: '\2630';  /* Unicode character for a hamburger icon */
+    font-size: 30px;
+    color: #a1562d;  /* Change to the color you prefer */
+}
+
+/* nav ul {
     list-style: none;
     display: flex;
     margin: 0;
@@ -46,106 +73,20 @@ nav ul li a {
 
 nav ul li a.active {
     font-weight: bold;
-}
+} */
 
 main {
     padding: 20px;
-}
-
-/* 通用样式 */
-.section-header {
-    text-align: center;
-    font-size: 2rem; /* 标题字体大小 */
-    color: white; /* 白色文字 */
-    background-color: #6fa3a6; /* 青色背景 */
-    padding: 10px 0;
-    margin: 20px 0; /* 上下间距 */
-    position: relative;
-}
-
-.section-header::after {
-    content: '';
-    display: block;
-    width: 80%;
-    height: 5px;
-    background-color: #f4a261; /* 橙色条 */
-    margin: 5px auto 0 auto;
-    border-radius: 3px;
 }
 
 section {
     text-align: center; /* Center all text in the section */
 }
 
-/* Carousel Container */
-.carousel {
-    position: relative;
-    max-width: 100%; /* Carousel width limited to 50% of the screen */
-    width: 100%; /* Ensures responsive behavior */
-    height: 60vh; /* Full-screen height */
-    margin: 0 auto; /* Center horizontally */
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    background-color: #fff; /* Optional: Background color to fill gaps */
-    border: 1px solid #ccc; /* Optional: Border for visualization */
-}
-
-/* Slides Container */
-.carousel-slides {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.5s ease-in-out;
-}
-
-/* Individual Slide */
-.slide {
-    flex: 0 0 100%; /* Each slide takes 100% of the carousel width */
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-/* Text Overlay */
-.text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.carousel-caption {
+    top: 25%;
     text-align: center;
     color: white;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.text-overlay h1 {
-    font-size: 2.5rem; /* Adjust font size for smaller width */
-    margin: 0;
-}
-
-/* Carousel Buttons */
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 2rem;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.carousel-btn.left {
-    left: -40px; /* Adjust position outside the carousel width */
-}
-
-.carousel-btn.right {
-    right: -40px; /* Adjust position outside the carousel width */
 }
 
 /* Responsive Adjustment for Mobile */
