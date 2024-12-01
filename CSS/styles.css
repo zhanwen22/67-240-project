@@ -1,19 +1,15 @@
 
-/* General Styles */
-.parkinsans-name {
-  font-family: "Parkinsans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400px;
-  font-style: normal;
+* {
+    font-family: "Parkinsans", serif;
+    font-optical-sizing: auto;
 }
-
 
 body {
     font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: #a1562d;
+    background-color: #c86f2d;
     color: white;
     width: 100%;
     padding: 1%;
@@ -116,11 +112,10 @@ header {
     margin-bottom: 1%;
     margin-left: 0;
     margin-right: 0;
-    color: navy;
-    background-color: aqua;
+    color: #3f525f;
+    background-color:#9acdcd;
 }
-/* section {
-    text-align: center; /* Center all text in the section */
+
 
 #headerCarousel{
     margin: 1%;
@@ -130,7 +125,7 @@ header {
 }
 
 .headerCarouselItem{
-    top: 35%;
+    top: 10%;
     text-align: center;
     color: white;
 }
@@ -138,6 +133,29 @@ header {
 .carouselinner{
     align-items: center;
 }
+
+.carousel-caption h1 {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    position: absolute; /* Ensures the caption is positioned relative to the carousel */
+    top: 0; /* Start at the top of the carousel */
+    left: 0; /* Start at the left of the carousel */
+    width: 100%; /* Make the caption span the entire width of the carousel */
+    height: 100%; /* Make the caption span the entire height of the carousel */
+    text-align: center; /* Center-align the text */
+    color: #ff5733; /* Custom color for the text */
+    font-size: 2.2rem; /* Adjust size as needed */
+    font-weight: 600; /* Make it bold */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    position: absolute;
+    text-align: center;
+    word-break: break-word;
+}
+
+
+
+
 
 #did-you-know{
     background-color: blue;
@@ -152,10 +170,22 @@ header {
     padding: 1%;
 }
 
-#survey{
-    align-items: center;
-    text-align: center;
+#survey {
+    background-color: #6299a1; /* Background color for the section */
+    color: white; /* Font color for the text */
+    padding: 2rem; /* Padding for spacing inside the section */
+    border-radius: 10px; /* Rounded corners */
+    width: 100%; /* Adjust the width of the survey box */
+    margin: 2rem auto; /* Center the survey box horizontally and add vertical spacing */
+    text-align: center; /* Center-align the text */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    font-weight: normal;
 }
+
+
+
+
+
 
 /* Responsive Adjustment for Mobile */
 @media (max-width: 768px) {
@@ -169,18 +199,39 @@ header {
 
 .events, .support, .preview, .grant-street {
     margin: 20px 0;
+    align-items: center;
 }
 
 .events .event, .grant-street .story {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .events .event img, .grant-street .story img {
     max-width: 100px;
     margin-right: 10px;
 }
+
+#events,#preview,#grant-street {
+    text-align: center; 
+}
+
+.event {
+    display: inline-flex; /* Align items horizontally */
+    align-items: center; /* Vertically align the image and text */
+    justify-content: center; /* Center content horizontally inside the event */
+    gap: 1rem; /* Add space between the image and text */
+    margin: 1rem auto; /* Add spacing between events */
+    text-align: left; /* Align text within each event box */
+    width: fit-content; /* Ensure the content fits around the image and text */
+    border: 1px solid #ddd; /* Optional: Add a border for a cleaner layout */
+    padding: 1rem; /* Optional: Add padding inside each event */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+
 
 .donate-btn {
     background-color: #f4a261;
