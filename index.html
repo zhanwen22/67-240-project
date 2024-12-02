@@ -39,53 +39,94 @@
 
 
     <main>
+      <div id="carousel-container">
         <div id="headerCarousel" class="carousel slide">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#headerCarousel" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#headerCarousel" data-bs-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner">
-                <!-- First Slide -->
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="Images/headerImg.jpg" alt="First slide">
-                    <div class="carousel-caption headerCarouselItem">
-                        <h1 class="text-white">PITTSBURGH <br> The Cradle of the <br> American Labor Movement</h1>
-                    </div>
-                </div>
-        
-                <!-- Second Slide -->
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="Images/headerImg.jpg" alt="Second Slide">
-                    <div class="carousel-caption headerCarouselItem"">
-                        <h1 class="text-white">The Founding city of the American Federation of Labor and the Congress of Industrial Organizations</h2>
-                    </div>
-                </div>
-        
-            </div>
-            <!-- Carousel controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+          <ol class="carousel-indicators">
+              <li data-bs-target="#headerCarousel" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#headerCarousel" data-bs-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+              <!-- First Slide -->
+              <div class="carousel-item active">
+                  <img class="d-block w-100" src="Images/headerImg.jpg" alt="First slide">
+                  <div class="carousel-caption headerCarouselItem">
+                      <h1 class="text-white">PITTSBURGH <br> The Cradle of the <br> American Labor Movement</h1>
+                  </div>
+              </div>
+      
+              <!-- Second Slide -->
+              <div class="carousel-item">
+                  <img class="d-block w-100" src="Images/headerImg.jpg" alt="Second Slide">
+                  <div class="carousel-caption headerCarouselItem"">
+                      <h1 class="text-white">The Founding city of the American Federation of Labor and the Congress of Industrial Organizations</h2>
+                  </div>
+              </div>
+      
+          </div>
+          <!-- Carousel controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
+        
 
         <div id="mobile-tours">
           <h2 class="section-header">Mobile Tours</h2>
           <p>Explore the historical sites of Pittsburgh, organize your itinerary, and travel the trail through our mobile app!</p>
           <p>See a small sample of the sites in Pittsburgh on the website!</p>
           
-          <button class="btn btn-outline-dark"><a href="index.html">Google Play</a></button>
+          <button class="btn btn-outline-dark"><a href="https://play.google.com/store/games?hl=en_US ">Google Play</a></button>
           <br>
-          <button class="btn btn-outline-dark"><a href="index.html">App Store</a></button>
+          <button class="btn btn-outline-dark"><a href="https://www.apple.com/app-store/">App Store</a></button>
         </div>
 
         <div id="home-locations">
           <h2 class="section-header">Pittsburgh Marker Maps</h2>
-          <p>placeholder</p>
+          <p>Maps of the locations where trail markers are located</p>
+          <div class="container">
+            <div class="row mt-1 mb-1">
+                <div class="col-6 mt-1 mb-1 marker-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12148.435137269!2d-79.89152887231766!3d40.42859001956522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834ee73de0c380d%3A0x73e439c378a9a080!2sGreendale%20Ave%20%26%20S%20Braddock%20Ave%2C%20Edgewood%2C%20PA%2015218!5e0!3m2!1sen!2sus!4v1733169798920!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <p><b>Jane Grey Swisshelm</b><br>
+                  Braddock & Greendale Aves., North of I-376 exit 9, Edgewood</p>
+                </div>
+                <div class="col-6 mt-1 mb-1 marker-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12146.588922548246!2d-79.99711440280568!3d40.43880967871302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f15a06a0c857%3A0x85ab0df43802b21a!2s428%20Grant%20St%2C%20Pittsburgh%2C%20PA%2015219!5e0!3m2!1sen!2sus!4v1733169894579!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <p><b>Blocking the Cannons (1860)</b> <br>
+                  County Courthouse, Grant Street</p>
+                </div>
+            </div>
+            <div class="row mt-1 mb-1">
+              <div class="col-6 mt-1 mb-1 marker-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12146.466730233575!2d-80.00322427626186!3d40.43948599466918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88348dbaef17beaf%3A0x5c6cca3b9d8fcfe8!2s5%20PPG%20Dr%2C%20Allison%20Park%2C%20PA%2015101!5e0!3m2!1sen!2sus!4v1733170132168!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><b>Martin Delany</b>
+                <br>5 PPG Place, 3rd Avenue and MArket Street-The Mystery</p>
+              </div>
+              <div class="col-6 mt-1 mb-1 marker-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d12145.110425503804!2d-80.00263881047155!3d40.44699230703617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDI2JzQ5LjIiTiA4MMKwMDAnMDkuNSJX!5e0!3m2!1sen!2sus!4v1733170152078!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><b>Cotton Mill Women Strikes (1845 & 1848)</b>
+                <br>Allegheny Landing, North Side, reiverside btween 6th & 7th St. Bridges</p>
+              </div>
+            </div>
+            <div class="row mt-1 mb-1">
+              <div class="col-6 mt-1 mb-1 marker-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3032.111803639569!2d-79.790634!3d40.53911899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDMyJzIwLjgiTiA3OcKwNDcnMjYuMyJX!5e0!3m2!1sen!2sus!4v1733170328230!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><b>Harwick Mine Explosion (1904)</b>
+                <br>by access road to Cheswick Power Plant, 151 Prter St., Springdale</p>
+              </div>
+              <div class="col-6 mt-1 mb-1 marker-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12146.978598074744!2d-79.99856851123955!3d40.43665282111632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f1506207cd79%3A0xe5d2feda954603e7!2s108%20Grant%20St%2C%20Pittsburgh%2C%20PA%2015219!5e0!3m2!1sen!2sus!4v1733170350413!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><b>Ironworkers Union Founding (1896)</b>
+                <br>Between Blvd. of the Allies and 1st Ave., Grant Street</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div id="survey">

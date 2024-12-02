@@ -36,24 +36,15 @@ header {
 
 .header-text {
     text-align: center;
-    flex-grow: 1; /* Allow header text to take up remaining space */
-    margin: 0; /* Remove margin */
+    flex-grow: 1; 
+    margin: 0;
 }
 
-.navbar{
-    background-color: #a1562d;
-}
-/* Styling for the navbar button (toggler) */
+
+
 .navbar-toggler {
-    background-color: transparent; /* Makes the button blend in */
-    border: none;  /* Removes border */
+    background-color: transparent;  
 }
-
-/* Remove the default background and icon color for the navbar toggler */
-.navbar-toggler-icon {
-    background-image: none; /* Removes the default icon */
-}
-
 
 #navigation-tabs a{
     color:black;
@@ -116,6 +107,9 @@ header {
     background-color:#9acdcd;
 }
 
+#carousel-container{
+    align-items: center;
+}
 
 #headerCarousel{
     margin: 1%;
@@ -153,12 +147,12 @@ header {
     word-break: break-word;
 }
 
-
-
-
-
+.marker-map iframe{
+    width: 100%;
+    height: 60%;
+}
 #did-you-know{
-    background-color: blue;
+    background-color: #6299a1;
     text-align: center;
     color: white;
     padding: 1%;
@@ -183,21 +177,42 @@ header {
 }
 
 
-
+img{
+    max-width: 100%;
+}
 
 
 
 /* Responsive Adjustment for Mobile */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .carousel {
-        max-width: 90%; /* Expand carousel width to 90% for small screens */
+        max-width: 90%; 
     }
     .text-overlay h1 {
-        font-size: 1.8rem; /* Reduce text size */
+        font-size: 1.8rem; 
     }
-}
+} */
 
-.events, .support, .preview, .grant-street {
+/*For laptop sized screens*/
+/* @media screen and (min-width: 992px) {
+    .sidebar {
+        width: 40%;
+    }
+    .main {
+        width: 60%;
+    }
+} */
+
+/*For tablet sized screens*/
+/* @media screen and (max-width: 992px){
+} */
+
+/* For cell phone sized screens */
+/* @media screen and (max-width: 576px){
+
+} */
+
+/* .events, .support, .preview, .grant-street {
     margin: 20px 0;
     align-items: center;
 }
@@ -207,31 +222,24 @@ header {
     align-items: center;
     margin-bottom: 10px;
     text-align: center;
-}
+} */
 
-.events .event img, .grant-street .story img {
+/* .events .event img, .grant-street .story img {
     max-width: 100px;
     margin-right: 10px;
-}
+} */
 
+#events .container{
+    width: 98%;
+}
+.event img {
+    width: 100%;
+}
+/* 
 #events,#preview,#grant-street {
     text-align: center; 
 }
-
-.event {
-    display: inline-flex; /* Align items horizontally */
-    align-items: center; /* Vertically align the image and text */
-    justify-content: center; /* Center content horizontally inside the event */
-    gap: 1rem; /* Add space between the image and text */
-    margin: 1rem auto; /* Add spacing between events */
-    text-align: left; /* Align text within each event box */
-    width: fit-content; /* Ensure the content fits around the image and text */
-    border: 1px solid #ddd; /* Optional: Add a border for a cleaner layout */
-    padding: 1rem; /* Optional: Add padding inside each event */
-    border-radius: 8px; /* Optional: Rounded corners */
-}
-
-
+ */
 
 .donate-btn {
     background-color: #f4a261;
