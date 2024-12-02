@@ -84,6 +84,15 @@ img{
     padding: 1%;
 }
 
+.descrip {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.event-link {
+    color: #d66910;
+}
+
 .header-content{
     display: flex;
     align-items: center;
@@ -115,7 +124,10 @@ img{
 }
 
 .location-header-text {
-    size: 1.5em;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    display: inline-block;
+    font-size: 1.2em;
 }
 
 .marker-map iframe{
