@@ -2,6 +2,8 @@
 * {
     font-family: "Parkinsans", serif;
     font-optical-sizing: auto;
+    align-items: center;
+    text-align: center;
 }
 
 body {
@@ -40,35 +42,47 @@ header {
     margin: 0;
 }
 
+#preview iframe{
+    width: 95%;
+}
 
+#grant-street img{
+    width: 95%;
+}
 
 .navbar-toggler {
     background-color: transparent;  
 }
 
 #navigation-tabs a{
-    color:black;
-    font-size: 150%;
+    color:white;
+    font-size: 175%;
     padding-left: 4%;
     padding-right: 4%;
     text-decoration: none;
     text-align: center;
+    padding: 1%;
 } 
+
+#navigation-tabs ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
 #navigation-tabs {
     padding-bottom: 1.20em;
     clear:both;
     display: list-item;
-    margin:auto;
     text-align: center;
 }
 
 #navigation-tabs a:hover{
-    color:#AAB396; 
+    color:#794f2e; 
 }
 
 #navigation-tabs a.selected{
-    color:#674636; 
+    color: #f4a261; 
     text-decoration: underline;
 }
 
@@ -80,8 +94,20 @@ header {
 .btn{
     margin: 1%;
     padding: 1%;
+    background-color: #f4a261 !important;
+    color: white !important;
+    text-decoration: none;
+    
 }
 
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #ae7648 !important;
+}
 #battle-of-homestead-logo-image{
     align-items: center;
     width: 95%;
@@ -194,23 +220,26 @@ img{
 } */
 
 /*For laptop sized screens*/
-/* @media screen and (min-width: 992px) {
-    .sidebar {
-        width: 40%;
+@media screen and (min-width: 992px) {
+    *{
+        font-size: 100%;
     }
-    .main {
-        width: 60%;
-    }
-} */
+} 
 
 /*For tablet sized screens*/
-/* @media screen and (max-width: 992px){
-} */
+@media screen and (max-width: 992px){
+    *{
+        font-size: 96%;
+    }
+}
 
 /* For cell phone sized screens */
-/* @media screen and (max-width: 576px){
+@media screen and (max-width: 576px){
+    *{
+        font-size: 92%;
+    }
 
-} */
+}
 
 /* .events, .support, .preview, .grant-street {
     margin: 20px 0;
@@ -241,7 +270,7 @@ img{
 }
  */
 
-.donate-btn {
+/* .donate-btn {
     background-color: #f4a261;
     color: white;
     border: none;
@@ -249,7 +278,7 @@ img{
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
-}
+} */
 
 footer {
     background-color: #a1562d;
