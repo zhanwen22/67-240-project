@@ -61,15 +61,15 @@ img{
 .carousel-caption h1 {
     display: flex;
     justify-content: center;
-    align-items: center; /* Vertically centers the content */
-    position: absolute; /* Ensures the caption is positioned relative to the carousel */
-    top: 0; /* Start at the top of the carousel */
-    left: 0; /* Start at the left of the carousel */
-    width: 100%; /* Make the caption span the entire width of the carousel */
-    height: 100%; /* Make the caption span the entire height of the carousel */
-    color: #ff5733; /* Custom color for the text */
-    font-size: 2.2rem; /* Adjust size as needed */
-    font-weight: 600; /* Make it bold */
+    align-items: center;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    color: #ff5733; 
+    font-size: 2.2rem; 
+    font-weight: 600; 
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
     position: absolute;
     word-break: break-word;
@@ -249,16 +249,6 @@ img{
     font-weight: normal;
 }
 
-/* Responsive Adjustment for Mobile */
-/* @media (max-width: 768px) {
-    .carousel {
-        max-width: 90%; 
-    }
-    .text-overlay h1 {
-        font-size: 1.8rem; 
-    }
-} */
-
 /*For laptop sized screens*/
 @media screen and (min-width: 992px) {
     *{
@@ -281,42 +271,11 @@ img{
 
 }
 
-/* .events, .support, .preview, .grant-street {
-    margin: 20px 0;
-    align-items: center;
-}
-
-.events .event, .grant-street .story {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    text-align: center;
-} */
-
-/* .events .event img, .grant-street .story img {
-    max-width: 100px;
-    margin-right: 10px;
-} */
-
 #events .container{
     width: 98%;
 }
 .event img {
     width: 100%;
 }
-/* 
-#events,#preview,#grant-street {
-    text-align: center; 
-}
- */
 
-/* .donate-btn {
-    background-color: #f4a261;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-} */
 
